@@ -12,7 +12,7 @@
   --color-redSocial: #e22e4c;
   --box-shadow: 3px 7px 7px rgba(0, 0, 0, 22%);
 
-  --size-btn-collapse: 9rem;
+  --size-btn-collapse: 15rem;
 
   --time-animation: 0.3s;
 }
@@ -53,6 +53,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-left: 0.8rem;
 
 }
 
@@ -110,9 +111,10 @@ body {
 /*para darle estilo al contenedor de los iconos de las redes sociales*/
 .social-networks {
   background-color: var(--color-redSocial);
+  width: 11rem;
   border-radius: 0 1rem 1rem 0;
   padding: 0.4rem;
-  padding-left: 1.5rem;
+  padding-left: 1.2rem;
   color: #fff;
   box-shadow: var(--box-shadow);
   z-index: 1;
@@ -120,6 +122,10 @@ body {
   transform: scaleX(0);
   transition: transform var(--time-animation);
   transform-origin: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
 
 
 
@@ -130,6 +136,7 @@ body {
 
   margin: 0 0.1rem;
   opacity: 0;
+  font-size: 1rem;
 }
 
 .nav-main__btn-collapse:checked ~ .social-networks {
